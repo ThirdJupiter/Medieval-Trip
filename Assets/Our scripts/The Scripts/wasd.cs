@@ -20,18 +20,23 @@ public class wasd : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Vector2 pos = transform.position;
+        Vector2 vel = Vector2.zero;
        
-        if (Input.GetKey(KeyCode.W)) pos.y += speed * Time.deltaTime;
+        if (Input.GetKey(KeyCode.W)) vel.y += speed;
 
-        if (Input.GetKey(KeyCode.A)) pos.x -= speed * Time.deltaTime;
+        if (Input.GetKey(KeyCode.A)) vel.x -= speed;
 
-        if (Input.GetKey(KeyCode.S)) pos.y -= speed * Time.deltaTime;
+        if (Input.GetKey(KeyCode.S)) vel.y -= speed;
 
-        if (Input.GetKey(KeyCode.D)) pos.x += speed * Time.deltaTime;
+        if (Input.GetKey(KeyCode.D)) vel.x += speed;
 
-        transform.position = pos;
+        rb.velocity = vel;
        
+        //if (Input.GetKeyDown(KeyCode.Space))
+        //{
+        //    string 
+        //}
+
     }
     
 }
