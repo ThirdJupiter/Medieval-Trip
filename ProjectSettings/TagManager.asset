@@ -23,8 +23,8 @@ TagManager:
   - 
   - 
   - 
-  - 
-  - 
+  - Grass
+  - Edge
   - Layer 1
   - Layer 2
   - Layer 3
@@ -41,10 +41,10 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: Layer 1
+  - name: Grass
     uniqueID: 2425651459
     locked: 0
-  - name: Layer 2
+  - name: Edge
     uniqueID: 4250941897
     locked: 0
   - name: Layer 3
@@ -58,4 +58,7 @@ TagManager:
     locked: 0
   - name: Trees
     uniqueID: 4232095295
+    locked: 0
+  - name: Stone
+    uniqueID: 2067337119
     locked: 0
