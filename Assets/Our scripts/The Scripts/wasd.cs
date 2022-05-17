@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class wasd : MonoBehaviour
 {
-    public Rigidbody2D rb;
+    [SerializeField] Rigidbody2D rb;
     public float speed = 10f;
     // public PointEffector2D p;
     
@@ -13,8 +13,7 @@ public class wasd : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        //player = GetComponent<PlayerPrefs>(); 
-       //p = GetComponent<PointEffector2D>();
+        DontDestroyOnLoad(gameObject);
     }
 
     // Update is called once per frame
@@ -32,10 +31,6 @@ public class wasd : MonoBehaviour
 
         rb.velocity = vel;
        
-        //if (Input.GetKeyDown(KeyCode.Space))
-        //{
-        //    string 
-        //}
 
     }
     
