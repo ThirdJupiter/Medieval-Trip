@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 3388096158324337958}
   - component: {fileID: 3388096158324337959}
   - component: {fileID: 3388096158324337952}
+  - component: {fileID: -6306742318271343353}
+  - component: {fileID: -6762004788187021082}
   m_Layer: 0
   m_Name: Dwaney
   m_TagString: Untagged
@@ -129,3 +131,55 @@ PolygonCollider2D:
       - {x: 0.5671054, y: 0.95546246}
       - {x: 0.31450033, y: 1.0960331}
       - {x: 0.22702003, y: 1.299509}
+--- !u!61 &-6306742318271343353
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3388096158324337953}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0.65625}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0}
+    oldSize: {x: 1.78125, y: 1.3125}
+    newSize: {x: 1.78125, y: 1.3125}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.78125, y: 1.3125}
+  m_EdgeRadius: 0
+--- !u!61 &-6762004788187021082
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3388096158324337953}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0.65625}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0}
+    oldSize: {x: 1.78125, y: 1.3125}
+    newSize: {x: 1.78125, y: 1.3125}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.78125, y: 1.3125}
+  m_EdgeRadius: 0
