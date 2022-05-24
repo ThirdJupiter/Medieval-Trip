@@ -3826,7 +3826,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53097011be0f6e7408771b6cef9fe116, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  iLevelToLoad: 2
+  iLevelToLoad: 3
   useIntToLoadLevel: 1
 --- !u!212 &1919988951
 SpriteRenderer:
