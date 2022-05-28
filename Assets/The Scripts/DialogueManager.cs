@@ -7,7 +7,7 @@ public class DialogManager : MonoBehaviour
 
     Queue<string> Sentences;
 
-    // Start is called before the first frame update
+    //// Start is called before the first frame update
     void Start()
     {
         Sentences = new Queue<string>();
@@ -16,7 +16,7 @@ public class DialogManager : MonoBehaviour
     //public void StartDialogue(Dialogue dialogue);
    
     //{ 
-    //    Debug.Log("Starting Dialogue with " + dialogue.child); 
+       // Debug.Log("Starting Dialogue with " + dialogue.child); 
     //}
 
     

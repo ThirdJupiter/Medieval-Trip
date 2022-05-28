@@ -29,6 +29,7 @@ public class wasd : MonoBehaviour
 
         if (Input.GetKey(KeyCode.D)) vel.x += speed;
 
+
         rb.velocity = vel;
        
 
