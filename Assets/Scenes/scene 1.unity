@@ -4167,8 +4167,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.01848585, y: -0.8483144}
-  m_Size: {x: 1.9673922, y: 2.1449683}
+  m_Offset: {x: 0.009134691, y: -0.8788993}
+  m_Size: {x: 0.8639467, y: 1.2885648}
   m_Direction: 0
 --- !u!212 &163192114
 SpriteRenderer:
@@ -5378,8 +5378,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -200}
-  m_SizeDelta: {x: -200, y: -600}
+  m_AnchoredPosition: {x: 0, y: -400}
+  m_SizeDelta: {x: -200, y: -1000}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &971018526
 MonoBehaviour:
