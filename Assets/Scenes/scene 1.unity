@@ -5081,6 +5081,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Teleport
       objectReference: {fileID: 0}
+    - target: {fileID: 509124197901324722, guid: d312fe3305873bb43aff61e44842db09,
+        type: 3}
+      propertyPath: iLevelToLoad
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 509124197901324723, guid: d312fe3305873bb43aff61e44842db09,
         type: 3}
       propertyPath: m_SortingLayer
@@ -5524,10 +5529,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c90bcb931f8b704d9b2aa43dc8d32b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textCompnent: {fileID: 1364772425}
-  lines:
-  - 
-  textSpeed: 2
+  text: {fileID: 0}
+  responses: []
 --- !u!1001 &1027469456
 PrefabInstance:
   m_ObjectHideFlags: 0

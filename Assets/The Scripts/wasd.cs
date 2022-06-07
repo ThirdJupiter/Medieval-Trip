@@ -8,9 +8,9 @@ public class wasd : MonoBehaviour
 
     [SerializeField] Rigidbody2D rb;
     public float speed = 10f;
-    // public PointEffector2D p;
-    List<ConversationSkelly> convoBoys = new List<ConversationSkelly>();
-    [SerializeField] Dialogue ui;
+   // public PointEffector2D p;
+    //List<ConversationSkelly> convoBoys = new List<ConversationSkelly>();
+   // [SerializeField] Dialogue ui;
 
     // Start is called before the first frame update
     void Start()
@@ -23,7 +23,7 @@ public class wasd : MonoBehaviour
     void Update()
     {
         Vector2 vel = Vector2.zero;
-       
+
         if (Input.GetKey(KeyCode.W)) vel.y += speed;
 
         if (Input.GetKey(KeyCode.A)) vel.x -= speed;
@@ -34,44 +34,44 @@ public class wasd : MonoBehaviour
 
 
         rb.velocity = vel;
-       
+
 
     }
-    
 
-    private void TalkTo()
-    {
-        if (convoBoys.Count < 1) return;
-        Child c;
-        float closestDistance = float.MaxValue;
-        int closestIndex = 0;
-        for (int i = 0; i < convoBoys.Count; i++)
-        {
-            float d = Vector3.Distance(transform.position, convoBoys[i].transform.position);
-            if (d < closestDistance)
-            {
-                closestDistance = d;
-                closestIndex = i;
-            }
-        }
 
-        ui.ShowMessage(convoBoys[closestIndex].GetResponse(), 1.0f);
-    }
+//    private void TalkTo()
+//    {
+//        if (convoBoys.Count < 1) return;
+//        Child c;
+//        float closestDistance = float.MaxValue;
+//        int closestIndex = 0;
+//        for (int i = 0; i < convoBoys.Count; i++)
+//        {
+//            float d = Vector3.Distance(transform.position, convoBoys[i].transform.position);
+//            if (d < closestDistance)
+//            {
+//                closestDistance = d;
+//                closestIndex = i;
+//            }
+//        }
 
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        ConversationSkelly sk;
-        if (collision.TryGetComponent<ConversationSkelly>(out sk))
-        {
-            convoBoys.Add(sk);
-        }
-    }
-    private void OnTriggerExit2D(Collider2D collision)
-    {
-        ConversationSkelly sk;
-        if (collision.TryGetComponent<ConversationSkelly>(out sk))
-        {
-            convoBoys.Remove(sk);
-        }
-    }
+//        ui.ShowMessage(convoBoys[closestIndex].GetResponse(), 1.0f);
+//    }
+
+//    private void OnTriggerEnter2D(Collider2D collision)
+//    {
+//        ConversationSkelly sk;
+//        if (collision.TryGetComponent<ConversationSkelly>(out sk))
+//        {
+//            convoBoys.Add(sk);
+//        }
+//    }
+//    private void OnTriggerExit2D(Collider2D collision)
+//    {
+//        ConversationSkelly sk;
+//        if (collision.TryGetComponent<ConversationSkelly>(out sk))
+//        {
+//            convoBoys.Remove(sk);
+//        }
+//   }
 }

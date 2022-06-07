@@ -1908,7 +1908,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 6
-      m_TileSpriteIndex: 6
+      m_TileSpriteIndex: 14
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -3529,8 +3529,8 @@ Tilemap:
     m_Data: {fileID: 21300058, guid: 1c9ed9d1200c29d4cbfd2071028c1cd5, type: 3}
   - m_RefCount: 8
     m_Data: {fileID: 21300062, guid: 1c9ed9d1200c29d4cbfd2071028c1cd5, type: 3}
-  - m_RefCount: 1
-    m_Data: {fileID: 21300030, guid: 1c9ed9d1200c29d4cbfd2071028c1cd5, type: 3}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
   - m_RefCount: 4
     m_Data: {fileID: 21300056, guid: 1c9ed9d1200c29d4cbfd2071028c1cd5, type: 3}
   - m_RefCount: 16
@@ -3545,8 +3545,8 @@ Tilemap:
     m_Data: {fileID: 21300112, guid: 1c9ed9d1200c29d4cbfd2071028c1cd5, type: 3}
   - m_RefCount: 6
     m_Data: {fileID: 21300114, guid: 1c9ed9d1200c29d4cbfd2071028c1cd5, type: 3}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
+  - m_RefCount: 1
+    m_Data: {fileID: 21300030, guid: 1c9ed9d1200c29d4cbfd2071028c1cd5, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: 21300080, guid: 1c9ed9d1200c29d4cbfd2071028c1cd5, type: 3}
   - m_RefCount: 1
@@ -3757,8 +3757,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 583f01319b0b82f4fa051da6a55201b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rb: {fileID: 9911164}
-  speed: 10.5
+  rb: {fileID: 0}
+  speed: 10
 --- !u!50 &9911164
 Rigidbody2D:
   serializedVersion: 4
@@ -8330,10 +8330,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c90bcb931f8b704d9b2aa43dc8d32b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textCompnent: {fileID: 487868855}
-  lines:
-  - 
-  textSpeed: 2
+  text: {fileID: 0}
+  responses: []
 --- !u!114 &2061373438
 MonoBehaviour:
   m_ObjectHideFlags: 0
